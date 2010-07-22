@@ -1,0 +1,252 @@
+Jul 21, 2010 10:54:49 PM example.helloWorld.jaxws.HelloWorld_Service <clinit>
+WARNING: Failed to create URL for the wsdl Location: './wsdl/HelloWorld.wsdl', retrying as a local file
+Jul 21, 2010 10:54:49 PM example.helloWorld.jaxws.HelloWorld_Service <clinit>
+WARNING: no protocol: ./wsdl/HelloWorld.wsdl
+Calling SYNC api
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 02:54:51 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 'Helter Scelter Thinks this is a bug' took 7000ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+Resp: Hello World 'Helter Scelter Thinks this is a bug' took 7000ms 
+1279767298534::  calling async #0
+1279767298550::  calling async #1
+1279767298550::  calling async #2
+1279767298550::  calling async #3
+1279767298550::  calling async #4
+1279767298550::  calling async #5
+1279767298550::  calling async #6
+1279767298550::  calling async #7
+1279767298550::  calling async #8
+1279767298550::  calling async #9
+1279767298550::  Canceling #0
+1279767298550::  Canceling #1
+1279767298550::  Canceling #2
+1279767298550::  Canceling #3
+1279767298550::  Canceling #4
+1279767298550::  Canceling #5
+1279767298550::  Canceling #6
+1279767298550::  Canceling #7
+1279767298550::  Canceling #8
+1279767298550::  Canceling #9
+1279767298550:: 0: isCanceled:true
+1279767298550:: 0: isDone:true
+1279767298550:: 1: isCanceled:true
+1279767298550:: 1: isDone:true
+1279767298550:: 2: isCanceled:true
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>1279767298550:: 2: 'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>1279767298534:: 0: 'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>1279767298550:: 1: 'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>1279767298550:: 6: 'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>1279767298550:: 4: 'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>1279767298550:: 5: 'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>1279767298550:: 9: 'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>1279767298550:: 8: 'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>1279767298550:: 3: 'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+1279767298550:: 2: isDone:true
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>1279767298550:: 7: 'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+1279767298597:: 3: isCanceled:true
+1279767298597:: 3: isDone:true
+1279767298597:: 4: isCanceled:true
+1279767298597:: 4: isDone:true
+1279767298597:: 5: isCanceled:true
+1279767298597:: 5: isDone:true
+1279767298597:: 6: isCanceled:true
+1279767298597:: 6: isDone:true
+1279767298597:: 7: isCanceled:true
+1279767298597:: 7: isDone:true
+1279767298597:: 8: isCanceled:true
+1279767298597:: 8: isDone:true
+1279767298597:: 9: isCanceled:true
+1279767298597:: 9: isDone:true
+Caught Exception for #0
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:75)
+Caught Exception for #1
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:75)
+Caught Exception for #2
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:75)
+Caught Exception for #3
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:75)
+Caught Exception for #4
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:75)
+Caught Exception for #5
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:75)
+Caught Exception for #6
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:75)
+Caught Exception for #7
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:75)
+Caught Exception for #8
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:75)
+Caught Exception for #9
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:75)
+Sleeping for 30 seconds
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 02:54:58 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 1279767298550:: 2: 'Helter Scelter Thinks this is a bug' took 7000ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 02:54:58 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 1279767298550:: 4: 'Helter Scelter Thinks this is a bug' took 2000ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 02:54:58 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 1279767298534:: 0: 'Helter Scelter Thinks this is a bug' took 8000ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 02:54:58 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 1279767298550:: 8: 'Helter Scelter Thinks this is a bug' took 2000ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 02:54:58 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 1279767298550:: 6: 'Helter Scelter Thinks this is a bug' took 3000ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 02:54:58 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 1279767298550:: 1: 'Helter Scelter Thinks this is a bug' took 10000ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 02:54:58 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 1279767298550:: 3: 'Helter Scelter Thinks this is a bug' took 6000ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 02:54:58 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 1279767298550:: 5: 'Helter Scelter Thinks this is a bug' took 7000ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 02:54:58 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 1279767298550:: 7: 'Helter Scelter Thinks this is a bug' took 4000ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 02:54:58 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 1279767298550:: 9: 'Helter Scelter Thinks this is a bug' took 8000ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+Done sleeping, exiting
