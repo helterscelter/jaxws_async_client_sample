@@ -1,0 +1,761 @@
+Jul 21, 2010 11:13:24 PM example.helloWorld.jaxws.HelloWorld_Service <clinit>
+WARNING: Failed to create URL for the wsdl Location: './wsdl/HelloWorld.wsdl', retrying as a local file
+Jul 21, 2010 11:13:24 PM example.helloWorld.jaxws.HelloWorld_Service <clinit>
+WARNING: no protocol: ./wsdl/HelloWorld.wsdl
+1279768405989::  calling async #0
+1279768405989::  calling async #1
+Offer: com.sun.xml.ws.client.AsyncResponseImpl@4d76b4
+1343761091420837:: Runnable com.sun.xml.ws.client.AsyncResponseImpl@1ac5f13 (com.sun.xml.ws.client.AsyncResponseImpl) starts in Thread[pool-1-thread-1,5,main]
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.offer(TimingThreadPool.java:92)
+java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+com.sun.xml.ws.client.sei.AsyncMethodHandler.doInvoke(AsyncMethodHandler.java:150)
+com.sun.xml.ws.client.sei.PollingMethodHandler.invoke(PollingMethodHandler.java:54)
+com.sun.xml.ws.client.sei.PollingMethodHandler.invoke(PollingMethodHandler.java:47)
+com.sun.xml.ws.client.sei.SEIStub.invoke(SEIStub.java:135)
+$Proxy28.helloWorldAsync(Unknown Source)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+weblogic.wsee.jaxws.spi.ClientInstance$ClientInstanceInvocationHandler.invoke(ClientInstance.java:363)
+$Proxy29.helloWorldAsync(Unknown Source)
+test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:52)
+
+1279768405989::  calling async #2
+Offer: com.sun.xml.ws.client.AsyncResponseImpl@195dd5b
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.offer(TimingThreadPool.java:92)
+java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+com.sun.xml.ws.client.sei.AsyncMethodHandler.doInvoke(AsyncMethodHandler.java:150)
+com.sun.xml.ws.client.sei.PollingMethodHandler.invoke(PollingMethodHandler.java:54)
+com.sun.xml.ws.client.sei.PollingMethodHandler.invoke(PollingMethodHandler.java:47)
+com.sun.xml.ws.client.sei.SEIStub.invoke(SEIStub.java:135)
+$Proxy28.helloWorldAsync(Unknown Source)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+weblogic.wsee.jaxws.spi.ClientInstance$ClientInstanceInvocationHandler.invoke(ClientInstance.java:363)
+$Proxy29.helloWorldAsync(Unknown Source)
+test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:52)
+
+1279768405989::  calling async #3
+Offer: com.sun.xml.ws.client.AsyncResponseImpl@1f78b68
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.offer(TimingThreadPool.java:92)
+java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+com.sun.xml.ws.client.sei.AsyncMethodHandler.doInvoke(AsyncMethodHandler.java:150)
+com.sun.xml.ws.client.sei.PollingMethodHandler.invoke(PollingMethodHandler.java:54)
+com.sun.xml.ws.client.sei.PollingMethodHandler.invoke(PollingMethodHandler.java:47)
+com.sun.xml.ws.client.sei.SEIStub.invoke(SEIStub.java:135)
+$Proxy28.helloWorldAsync(Unknown Source)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+weblogic.wsee.jaxws.spi.ClientInstance$ClientInstanceInvocationHandler.invoke(ClientInstance.java:363)
+$Proxy29.helloWorldAsync(Unknown Source)
+test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:52)
+
+1279768405989::  calling async #4
+Offer: com.sun.xml.ws.client.AsyncResponseImpl@e183e9
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.offer(TimingThreadPool.java:92)
+java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+com.sun.xml.ws.client.sei.AsyncMethodHandler.doInvoke(AsyncMethodHandler.java:150)
+com.sun.xml.ws.client.sei.PollingMethodHandler.invoke(PollingMethodHandler.java:54)
+com.sun.xml.ws.client.sei.PollingMethodHandler.invoke(PollingMethodHandler.java:47)
+com.sun.xml.ws.client.sei.SEIStub.invoke(SEIStub.java:135)
+$Proxy28.helloWorldAsync(Unknown Source)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+weblogic.wsee.jaxws.spi.ClientInstance$ClientInstanceInvocationHandler.invoke(ClientInstance.java:363)
+$Proxy29.helloWorldAsync(Unknown Source)
+test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:52)
+
+1279768405989::  calling async #5
+Offer: com.sun.xml.ws.client.AsyncResponseImpl@19b46dc
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.offer(TimingThreadPool.java:92)
+java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+com.sun.xml.ws.client.sei.AsyncMethodHandler.doInvoke(AsyncMethodHandler.java:150)
+com.sun.xml.ws.client.sei.PollingMethodHandler.invoke(PollingMethodHandler.java:54)
+com.sun.xml.ws.client.sei.PollingMethodHandler.invoke(PollingMethodHandler.java:47)
+com.sun.xml.ws.client.sei.SEIStub.invoke(SEIStub.java:135)
+$Proxy28.helloWorldAsync(Unknown Source)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+weblogic.wsee.jaxws.spi.ClientInstance$ClientInstanceInvocationHandler.invoke(ClientInstance.java:363)
+$Proxy29.helloWorldAsync(Unknown Source)
+test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:52)
+
+1279768405989::  calling async #6
+Offer: com.sun.xml.ws.client.AsyncResponseImpl@1493102
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.offer(TimingThreadPool.java:92)
+java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+com.sun.xml.ws.client.sei.AsyncMethodHandler.doInvoke(AsyncMethodHandler.java:150)
+com.sun.xml.ws.client.sei.PollingMethodHandler.invoke(PollingMethodHandler.java:54)
+com.sun.xml.ws.client.sei.PollingMethodHandler.invoke(PollingMethodHandler.java:47)
+com.sun.xml.ws.client.sei.SEIStub.invoke(SEIStub.java:135)
+$Proxy28.helloWorldAsync(Unknown Source)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+weblogic.wsee.jaxws.spi.ClientInstance$ClientInstanceInvocationHandler.invoke(ClientInstance.java:363)
+$Proxy29.helloWorldAsync(Unknown Source)
+test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:52)
+
+1279768405989::  calling async #7
+Offer: com.sun.xml.ws.client.AsyncResponseImpl@30ae41
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.offer(TimingThreadPool.java:92)
+java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+com.sun.xml.ws.client.sei.AsyncMethodHandler.doInvoke(AsyncMethodHandler.java:150)
+com.sun.xml.ws.client.sei.PollingMethodHandler.invoke(PollingMethodHandler.java:54)
+com.sun.xml.ws.client.sei.PollingMethodHandler.invoke(PollingMethodHandler.java:47)
+com.sun.xml.ws.client.sei.SEIStub.invoke(SEIStub.java:135)
+$Proxy28.helloWorldAsync(Unknown Source)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+weblogic.wsee.jaxws.spi.ClientInstance$ClientInstanceInvocationHandler.invoke(ClientInstance.java:363)
+$Proxy29.helloWorldAsync(Unknown Source)
+test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:52)
+
+1279768405989::  calling async #8
+Offer: com.sun.xml.ws.client.AsyncResponseImpl@4204
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.offer(TimingThreadPool.java:92)
+java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+com.sun.xml.ws.client.sei.AsyncMethodHandler.doInvoke(AsyncMethodHandler.java:150)
+com.sun.xml.ws.client.sei.PollingMethodHandler.invoke(PollingMethodHandler.java:54)
+com.sun.xml.ws.client.sei.PollingMethodHandler.invoke(PollingMethodHandler.java:47)
+com.sun.xml.ws.client.sei.SEIStub.invoke(SEIStub.java:135)
+$Proxy28.helloWorldAsync(Unknown Source)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+weblogic.wsee.jaxws.spi.ClientInstance$ClientInstanceInvocationHandler.invoke(ClientInstance.java:363)
+$Proxy29.helloWorldAsync(Unknown Source)
+test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:52)
+
+1279768405989::  calling async #9
+Offer: com.sun.xml.ws.client.AsyncResponseImpl@ee1ede
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.offer(TimingThreadPool.java:92)
+java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+com.sun.xml.ws.client.sei.AsyncMethodHandler.doInvoke(AsyncMethodHandler.java:150)
+com.sun.xml.ws.client.sei.PollingMethodHandler.invoke(PollingMethodHandler.java:54)
+com.sun.xml.ws.client.sei.PollingMethodHandler.invoke(PollingMethodHandler.java:47)
+com.sun.xml.ws.client.sei.SEIStub.invoke(SEIStub.java:135)
+$Proxy28.helloWorldAsync(Unknown Source)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+weblogic.wsee.jaxws.spi.ClientInstance$ClientInstanceInvocationHandler.invoke(ClientInstance.java:363)
+$Proxy29.helloWorldAsync(Unknown Source)
+test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:52)
+
+1279768405989::  Canceling #0
+1279768405989::  Canceling #1
+1279768405989::  Canceling #2
+1279768405989::  Canceling #3
+1279768405989::  Canceling #4
+1279768405989::  Canceling #5
+1279768405989::  Canceling #6
+1279768405989::  Canceling #7
+1279768405989::  Canceling #8
+1279768405989::  Canceling #9
+1279768405989:: 0: isCanceled:true
+1279768405989:: 0: isDone:true
+1279768405989:: 1: isCanceled:true
+1279768405989:: 1: isDone:true
+1279768405989:: 2: isCanceled:true
+1279768405989:: 2: isDone:true
+1279768405989:: 3: isCanceled:true
+1279768405989:: 3: isDone:true
+1279768405989:: 4: isCanceled:true
+1279768405989:: 4: isDone:true
+1279768405989:: 5: isCanceled:true
+1279768405989:: 5: isDone:true
+1279768405989:: 6: isCanceled:true
+1279768405989:: 6: isDone:true
+1279768405989:: 7: isCanceled:true
+1279768405989:: 7: isDone:true
+1279768405989:: 8: isCanceled:true
+1279768405989:: 8: isDone:true
+1279768405989:: 9: isCanceled:true
+1279768405989:: 9: isDone:true
+Caught Exception for #0
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:76)
+Caught Exception for #1
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:76)
+Caught Exception for #2
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:76)
+Caught Exception for #3
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:76)
+Caught Exception for #4
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:76)
+Caught Exception for #5
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:76)
+Caught Exception for #6
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:76)
+Caught Exception for #7
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:76)
+Caught Exception for #8
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:76)
+Caught Exception for #9
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:76)
+Sleeping for 30 seconds
+Offer: engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.offer(TimingThreadPool.java:92)
+java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+com.sun.xml.ws.api.pipe.Engine.addRunnable(Engine.java:76)
+com.sun.xml.ws.api.pipe.Fiber.start(Fiber.java:262)
+com.sun.xml.ws.client.Stub.processAsync(Stub.java:349)
+com.sun.xml.ws.client.sei.SEIStub.doProcessAsync(SEIStub.java:156)
+com.sun.xml.ws.client.sei.AsyncMethodHandler$SEIAsyncInvoker.do_run(AsyncMethodHandler.java:220)
+com.sun.xml.ws.client.AsyncInvoker.run(AsyncInvoker.java:72)
+com.sun.xml.ws.client.AsyncResponseImpl.run(AsyncResponseImpl.java:84)
+java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343761113043138:: Runnable com.sun.xml.ws.client.AsyncResponseImpl@1ac5f13 ends after 21622301ns.
+Take
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.take(TimingThreadPool.java:132)
+java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343761113275849:: Runnable com.sun.xml.ws.client.AsyncResponseImpl@4d76b4 (com.sun.xml.ws.client.AsyncResponseImpl) starts in Thread[pool-1-thread-1,5,main]
+Offer: engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.offer(TimingThreadPool.java:92)
+java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+com.sun.xml.ws.api.pipe.Engine.addRunnable(Engine.java:76)
+com.sun.xml.ws.api.pipe.Fiber.start(Fiber.java:262)
+com.sun.xml.ws.client.Stub.processAsync(Stub.java:349)
+com.sun.xml.ws.client.sei.SEIStub.doProcessAsync(SEIStub.java:156)
+com.sun.xml.ws.client.sei.AsyncMethodHandler$SEIAsyncInvoker.do_run(AsyncMethodHandler.java:220)
+com.sun.xml.ws.client.AsyncInvoker.run(AsyncInvoker.java:72)
+com.sun.xml.ws.client.AsyncResponseImpl.run(AsyncResponseImpl.java:84)
+java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343761113576446:: Runnable com.sun.xml.ws.client.AsyncResponseImpl@4d76b4 ends after 300597ns.
+Take
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.take(TimingThreadPool.java:132)
+java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343761113713335:: Runnable com.sun.xml.ws.client.AsyncResponseImpl@195dd5b (com.sun.xml.ws.client.AsyncResponseImpl) starts in Thread[pool-1-thread-1,5,main]
+Offer: engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.offer(TimingThreadPool.java:92)
+java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+com.sun.xml.ws.api.pipe.Engine.addRunnable(Engine.java:76)
+com.sun.xml.ws.api.pipe.Fiber.start(Fiber.java:262)
+com.sun.xml.ws.client.Stub.processAsync(Stub.java:349)
+com.sun.xml.ws.client.sei.SEIStub.doProcessAsync(SEIStub.java:156)
+com.sun.xml.ws.client.sei.AsyncMethodHandler$SEIAsyncInvoker.do_run(AsyncMethodHandler.java:220)
+com.sun.xml.ws.client.AsyncInvoker.run(AsyncInvoker.java:72)
+com.sun.xml.ws.client.AsyncResponseImpl.run(AsyncResponseImpl.java:84)
+java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343761113948560:: Runnable com.sun.xml.ws.client.AsyncResponseImpl@195dd5b ends after 235225ns.
+Take
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.take(TimingThreadPool.java:132)
+java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343761114080421:: Runnable com.sun.xml.ws.client.AsyncResponseImpl@1f78b68 (com.sun.xml.ws.client.AsyncResponseImpl) starts in Thread[pool-1-thread-1,5,main]
+Offer: engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.offer(TimingThreadPool.java:92)
+java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+com.sun.xml.ws.api.pipe.Engine.addRunnable(Engine.java:76)
+com.sun.xml.ws.api.pipe.Fiber.start(Fiber.java:262)
+com.sun.xml.ws.client.Stub.processAsync(Stub.java:349)
+com.sun.xml.ws.client.sei.SEIStub.doProcessAsync(SEIStub.java:156)
+com.sun.xml.ws.client.sei.AsyncMethodHandler$SEIAsyncInvoker.do_run(AsyncMethodHandler.java:220)
+com.sun.xml.ws.client.AsyncInvoker.run(AsyncInvoker.java:72)
+com.sun.xml.ws.client.AsyncResponseImpl.run(AsyncResponseImpl.java:84)
+java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343761114335202:: Runnable com.sun.xml.ws.client.AsyncResponseImpl@1f78b68 ends after 254781ns.
+Take
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.take(TimingThreadPool.java:132)
+java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343761114471811:: Runnable com.sun.xml.ws.client.AsyncResponseImpl@e183e9 (com.sun.xml.ws.client.AsyncResponseImpl) starts in Thread[pool-1-thread-1,5,main]
+Offer: engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.offer(TimingThreadPool.java:92)
+java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+com.sun.xml.ws.api.pipe.Engine.addRunnable(Engine.java:76)
+com.sun.xml.ws.api.pipe.Fiber.start(Fiber.java:262)
+com.sun.xml.ws.client.Stub.processAsync(Stub.java:349)
+com.sun.xml.ws.client.sei.SEIStub.doProcessAsync(SEIStub.java:156)
+com.sun.xml.ws.client.sei.AsyncMethodHandler$SEIAsyncInvoker.do_run(AsyncMethodHandler.java:220)
+com.sun.xml.ws.client.AsyncInvoker.run(AsyncInvoker.java:72)
+com.sun.xml.ws.client.AsyncResponseImpl.run(AsyncResponseImpl.java:84)
+java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343761114702567:: Runnable com.sun.xml.ws.client.AsyncResponseImpl@e183e9 ends after 230756ns.
+Take
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.take(TimingThreadPool.java:132)
+java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343761114836103:: Runnable com.sun.xml.ws.client.AsyncResponseImpl@19b46dc (com.sun.xml.ws.client.AsyncResponseImpl) starts in Thread[pool-1-thread-1,5,main]
+Offer: engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.offer(TimingThreadPool.java:92)
+java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+com.sun.xml.ws.api.pipe.Engine.addRunnable(Engine.java:76)
+com.sun.xml.ws.api.pipe.Fiber.start(Fiber.java:262)
+com.sun.xml.ws.client.Stub.processAsync(Stub.java:349)
+com.sun.xml.ws.client.sei.SEIStub.doProcessAsync(SEIStub.java:156)
+com.sun.xml.ws.client.sei.AsyncMethodHandler$SEIAsyncInvoker.do_run(AsyncMethodHandler.java:220)
+com.sun.xml.ws.client.AsyncInvoker.run(AsyncInvoker.java:72)
+com.sun.xml.ws.client.AsyncResponseImpl.run(AsyncResponseImpl.java:84)
+java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343761115084179:: Runnable com.sun.xml.ws.client.AsyncResponseImpl@19b46dc ends after 248076ns.
+Take
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.take(TimingThreadPool.java:132)
+java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343761115229449:: Runnable com.sun.xml.ws.client.AsyncResponseImpl@1493102 (com.sun.xml.ws.client.AsyncResponseImpl) starts in Thread[pool-1-thread-1,5,main]
+Offer: engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.offer(TimingThreadPool.java:92)
+java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+com.sun.xml.ws.api.pipe.Engine.addRunnable(Engine.java:76)
+com.sun.xml.ws.api.pipe.Fiber.start(Fiber.java:262)
+com.sun.xml.ws.client.Stub.processAsync(Stub.java:349)
+com.sun.xml.ws.client.sei.SEIStub.doProcessAsync(SEIStub.java:156)
+com.sun.xml.ws.client.sei.AsyncMethodHandler$SEIAsyncInvoker.do_run(AsyncMethodHandler.java:220)
+com.sun.xml.ws.client.AsyncInvoker.run(AsyncInvoker.java:72)
+com.sun.xml.ws.client.AsyncResponseImpl.run(AsyncResponseImpl.java:84)
+java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343761115471938:: Runnable com.sun.xml.ws.client.AsyncResponseImpl@1493102 ends after 242489ns.
+Take
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.take(TimingThreadPool.java:132)
+java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343761115611341:: Runnable com.sun.xml.ws.client.AsyncResponseImpl@30ae41 (com.sun.xml.ws.client.AsyncResponseImpl) starts in Thread[pool-1-thread-1,5,main]
+Offer: engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.offer(TimingThreadPool.java:92)
+java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+com.sun.xml.ws.api.pipe.Engine.addRunnable(Engine.java:76)
+com.sun.xml.ws.api.pipe.Fiber.start(Fiber.java:262)
+com.sun.xml.ws.client.Stub.processAsync(Stub.java:349)
+com.sun.xml.ws.client.sei.SEIStub.doProcessAsync(SEIStub.java:156)
+com.sun.xml.ws.client.sei.AsyncMethodHandler$SEIAsyncInvoker.do_run(AsyncMethodHandler.java:220)
+com.sun.xml.ws.client.AsyncInvoker.run(AsyncInvoker.java:72)
+com.sun.xml.ws.client.AsyncResponseImpl.run(AsyncResponseImpl.java:84)
+java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343761115840979:: Runnable com.sun.xml.ws.client.AsyncResponseImpl@30ae41 ends after 229638ns.
+Take
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.take(TimingThreadPool.java:132)
+java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343761115979265:: Runnable com.sun.xml.ws.client.AsyncResponseImpl@4204 (com.sun.xml.ws.client.AsyncResponseImpl) starts in Thread[pool-1-thread-1,5,main]
+Offer: engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.offer(TimingThreadPool.java:92)
+java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+com.sun.xml.ws.api.pipe.Engine.addRunnable(Engine.java:76)
+com.sun.xml.ws.api.pipe.Fiber.start(Fiber.java:262)
+com.sun.xml.ws.client.Stub.processAsync(Stub.java:349)
+com.sun.xml.ws.client.sei.SEIStub.doProcessAsync(SEIStub.java:156)
+com.sun.xml.ws.client.sei.AsyncMethodHandler$SEIAsyncInvoker.do_run(AsyncMethodHandler.java:220)
+com.sun.xml.ws.client.AsyncInvoker.run(AsyncInvoker.java:72)
+com.sun.xml.ws.client.AsyncResponseImpl.run(AsyncResponseImpl.java:84)
+java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343761116223710:: Runnable com.sun.xml.ws.client.AsyncResponseImpl@4204 ends after 244445ns.
+Take
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.take(TimingThreadPool.java:132)
+java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343761116358643:: Runnable com.sun.xml.ws.client.AsyncResponseImpl@ee1ede (com.sun.xml.ws.client.AsyncResponseImpl) starts in Thread[pool-1-thread-1,5,main]
+Offer: engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.offer(TimingThreadPool.java:92)
+java.util.concurrent.ThreadPoolExecutor.execute(Unknown Source)
+com.sun.xml.ws.api.pipe.Engine.addRunnable(Engine.java:76)
+com.sun.xml.ws.api.pipe.Fiber.start(Fiber.java:262)
+com.sun.xml.ws.client.Stub.processAsync(Stub.java:349)
+com.sun.xml.ws.client.sei.SEIStub.doProcessAsync(SEIStub.java:156)
+com.sun.xml.ws.client.sei.AsyncMethodHandler$SEIAsyncInvoker.do_run(AsyncMethodHandler.java:220)
+com.sun.xml.ws.client.AsyncInvoker.run(AsyncInvoker.java:72)
+com.sun.xml.ws.client.AsyncResponseImpl.run(AsyncResponseImpl.java:84)
+java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343761116587443:: Runnable com.sun.xml.ws.client.AsyncResponseImpl@ee1ede ends after 228800ns.
+Take
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.take(TimingThreadPool.java:132)
+java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343761116722656:: Runnable engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1 (com.sun.xml.ws.api.pipe.Fiber) starts in Thread[pool-1-thread-1,5,main]
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>1279768405989:: 0: 'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 03:13:26 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 1279768405989:: 0: 'Helter Scelter Thinks this is a bug' took 2001ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+1343763291017154:: Runnable engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1 ends after 2174294498ns.
+Take
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.take(TimingThreadPool.java:132)
+java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343763291358817:: Runnable engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1 (com.sun.xml.ws.api.pipe.Fiber) starts in Thread[pool-1-thread-1,5,main]
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>1279768405989:: 1: 'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 03:13:28 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 1279768405989:: 1: 'Helter Scelter Thinks this is a bug' took 4001ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+1343767300688495:: Runnable engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1 ends after 4009329678ns.
+Take
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.take(TimingThreadPool.java:132)
+java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343767300991606:: Runnable engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1 (com.sun.xml.ws.api.pipe.Fiber) starts in Thread[pool-1-thread-1,5,main]
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>1279768405989:: 2: 'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 03:13:32 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 1279768405989:: 2: 'Helter Scelter Thinks this is a bug' took 8001ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+1343775310841182:: Runnable engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1 ends after 8009849576ns.
+Take
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.take(TimingThreadPool.java:132)
+java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343775311139264:: Runnable engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1 (com.sun.xml.ws.api.pipe.Fiber) starts in Thread[pool-1-thread-1,5,main]
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>1279768405989:: 3: 'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 03:13:40 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 1279768405989:: 3: 'Helter Scelter Thinks this is a bug' took 3000ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+1343778320126999:: Runnable engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1 ends after 3008987735ns.
+Take
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.take(TimingThreadPool.java:132)
+java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343778320450504:: Runnable engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1 (com.sun.xml.ws.api.pipe.Fiber) starts in Thread[pool-1-thread-1,5,main]
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>1279768405989:: 4: 'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 03:13:43 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 1279768405989:: 4: 'Helter Scelter Thinks this is a bug' took 4000ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+1343782338938049:: Runnable engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1 ends after 4018487545ns.
+Take
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.take(TimingThreadPool.java:132)
+java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343782339237528:: Runnable engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1 (com.sun.xml.ws.api.pipe.Fiber) starts in Thread[pool-1-thread-1,5,main]
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>1279768405989:: 5: 'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+Done sleeping, exiting
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 03:13:47 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 1279768405989:: 5: 'Helter Scelter Thinks this is a bug' took 10000ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+1343792348881771:: Runnable engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1 ends after 10009644243ns.
+Take
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.take(TimingThreadPool.java:132)
+java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343792349210304:: Runnable engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1 (com.sun.xml.ws.api.pipe.Fiber) starts in Thread[pool-1-thread-1,5,main]
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>1279768405989:: 6: 'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 03:13:57 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 1279768405989:: 6: 'Helter Scelter Thinks this is a bug' took 9000ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+1343801366404948:: Runnable engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1 ends after 9017194644ns.
+Take
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.take(TimingThreadPool.java:132)
+java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343801366703310:: Runnable engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1 (com.sun.xml.ws.api.pipe.Fiber) starts in Thread[pool-1-thread-1,5,main]
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>1279768405989:: 7: 'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 03:14:06 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 1279768405989:: 7: 'Helter Scelter Thinks this is a bug' took 1000ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+1343802376514892:: Runnable engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1 ends after 1009811582ns.
+Take
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.take(TimingThreadPool.java:132)
+java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343802376875552:: Runnable engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1 (com.sun.xml.ws.api.pipe.Fiber) starts in Thread[pool-1-thread-1,5,main]
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>1279768405989:: 8: 'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 03:14:07 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 1279768405989:: 8: 'Helter Scelter Thinks this is a bug' took 3000ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+1343805383863591:: Runnable engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1 ends after 3006988039ns.
+Take
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.take(TimingThreadPool.java:132)
+java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+1343805384158322:: Runnable engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1 (com.sun.xml.ws.api.pipe.Fiber) starts in Thread[pool-1-thread-1,5,main]
+---[HTTP request - http://localhost:7001/helloWorld]---
+Content-type: text/xml;charset="utf-8"
+Soapaction: "http://www.example.org/HelloWorld/HelloWorld"
+Accept: text/xml, multipart/related, text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorld xmlns:ns2="http://www.example.org/HelloWorld/"><in>1279768405989:: 9: 'Helter Scelter Thinks this is a bug'</in></ns2:HelloWorld></S:Body></S:Envelope>--------------------
+
+---[HTTP response - http://localhost:7001/helloWorld - 200]---
+Transfer-encoding: chunked
+null: HTTP/1.1 200 OK
+Content-type: text/xml;charset="utf-8"
+X-powered-by: Servlet/2.5 JSP/2.1
+Date: Thu, 22 Jul 2010 03:14:10 GMT
+<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:HelloWorldResponse xmlns:ns2="http://www.example.org/HelloWorld/"><out>Hello World 1279768405989:: 9: 'Helter Scelter Thinks this is a bug' took 6000ms </out></ns2:HelloWorldResponse></S:Body></S:Envelope>--------------------
+
+1343811394227478:: Runnable engine-Oracle JAX-WS 2.1.5: Stub for http://www.example.org/helloWorldfiber--1 ends after 6010069156ns.
+No Jobs left in Queue. Shutting down TimingThreadPool 
+Poll
+
+java.lang.Thread.getStackTrace(Unknown Source)
+test.client.TimingThreadPool$LoggingArrayBlockingQueue.poll(TimingThreadPool.java:108)
+java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+
+Terminated: avg time=2514924690ns.
+

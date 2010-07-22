@@ -16,7 +16,7 @@ public class HelloWorldAsyncClient {
 	private static HelloWorld hwPort;
 	static {
 		hwService = new HelloWorld_Service();
-		//hwService.setExecutor(new TimingThreadPool());  // limit our async calls to one thread
+		hwService.setExecutor(new TimingThreadPool());  // limit our async calls to one thread
 
 		hwPort = hwService.getHelloWorldSOAP();
 
