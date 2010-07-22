@@ -1,0 +1,96 @@
+Jul 21, 2010 10:28:59 PM example.helloWorld.jaxws.HelloWorld_Service <clinit>
+WARNING: Failed to create URL for the wsdl Location: './wsdl/HelloWorld.wsdl', retrying as a local file
+Jul 21, 2010 10:28:59 PM example.helloWorld.jaxws.HelloWorld_Service <clinit>
+WARNING: no protocol: ./wsdl/HelloWorld.wsdl
+Calling SYNC api
+Resp: Hello World 'Helter Scelter Thinks this is a bug' took 8000ms 
+1279765749568::  calling async #0
+1279765749584::  calling async #1
+1279765749584::  calling async #2
+1279765749584::  calling async #3
+1279765749584::  calling async #4
+1279765749584::  calling async #5
+1279765749584::  calling async #6
+1279765749584::  calling async #7
+1279765749584::  calling async #8
+1279765749584::  calling async #9
+1279765749599::  Canceling #0
+1279765749599::  Canceling #1
+1279765749599::  Canceling #2
+1279765749599::  Canceling #3
+1279765749599::  Canceling #4
+1279765749599::  Canceling #5
+1279765749599::  Canceling #6
+1279765749599::  Canceling #7
+1279765749599::  Canceling #8
+1279765749599::  Canceling #9
+1279765749599:: 0: isCanceled:true
+1279765749599:: 0: isDone:true
+1279765749599:: 1: isCanceled:true
+1279765749599:: 1: isDone:true
+1279765749599:: 2: isCanceled:true
+1279765749599:: 2: isDone:true
+1279765749599:: 3: isCanceled:true
+1279765749599:: 3: isDone:true
+1279765749646:: 4: isCanceled:true
+1279765749646:: 4: isDone:true
+1279765749646:: 5: isCanceled:true
+1279765749646:: 5: isDone:true
+1279765749646:: 6: isCanceled:true
+1279765749646:: 6: isDone:true
+1279765749646:: 7: isCanceled:true
+1279765749646:: 7: isDone:true
+1279765749646:: 8: isCanceled:true
+1279765749646:: 8: isDone:true
+1279765749646:: 9: isCanceled:true
+1279765749646:: 9: isDone:true
+Caught Exception for #0
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:75)
+Caught Exception for #1
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:75)
+Caught Exception for #2
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:75)
+Caught Exception for #3
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:75)
+Caught Exception for #4
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:75)
+Caught Exception for #5
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:75)
+Caught Exception for #6
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:75)
+Caught Exception for #7
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:75)
+Caught Exception for #8
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:75)
+Caught Exception for #9
+java.util.concurrent.CancellationException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at test.client.HelloWorldAsyncClient.main(HelloWorldAsyncClient.java:75)

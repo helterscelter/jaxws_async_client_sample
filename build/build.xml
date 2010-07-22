@@ -1,0 +1,227 @@
+<project name="helloWorld" default="info">
+	<dirname property="helloWorld.build.dir" file="${ant.file.helloWorld}"  />
+	<dirname property="helloWorld.dir" file="${helloWorld.build.dir}" />
+
+	
+	<property file="build.properties"  />
+	<property environment="env"/>
+
+	<property name="wls.home" value="/opt/bea/wls10.3.3/wlserver_10.3" />
+	
+	<property name="contrib.dir" value="${helloWorld.dir}/contrib" />
+	<property name="distrib.dir" value="${helloWorld.dir}/distrib" />
+
+
+	<!-- resource classpaths -->
+	<path id="wls.class.path">
+		<pathelement path="${wls.home}/server/lib/weblogic.jar" />
+	</path>
+	
+
+	<!-- contrib classpaths -->
+    <path id="contrib.jaxb.class.path">
+    	<fileset dir="${wls.home}/../modules" >
+    		<include name="glassfish.jaxb_1.0.0.0_2-1-9.jar" />
+    		<include name="glassfish.jaxb.xjc_1.0.0.0_2-1-9.jar" />
+    	</fileset>
+    </path>
+
+
+
+	<!-- task definitions -->
+
+	<taskdef name="wsdlc"  		classname="weblogic.wsee.tools.anttasks.WsdlcTask" 	classpathref="wls.class.path" />
+	<taskdef name="jwsc" 		classname="weblogic.wsee.tools.anttasks.JwscTask" 	classpathref="wls.class.path" />
+	<taskdef name="clientgen" 	classname="weblogic.wsee.tools.anttasks.ClientGenTask" 	classpathref="wls.class.path" />
+	<taskdef name="wldeploy" 	classname="weblogic.ant.taskdefs.management.WLDeploy" 	classpathref="wls.class.path" />
+	<taskdef name="wsimport" 	classname="com.sun.tools.ws.ant.WsImport" 		classpathref="wls.class.path" />
+
+
+	<taskdef name="xjc" 		classname="com.sun.tools.xjc.XJCTask" classpathref="contrib.jaxb.class.path" />
+	
+	
+	
+	<target name="info" >
+		<echo>
+			Build script for helloWorld
+		</echo>
+	</target>
+
+
+
+	<path id="supp.class.path">
+		<path refid="wls.class.path" />
+		<path refid="contrib.jaxb.class.path" />
+	</path>
+
+	<!-- classpaths built as part of the build -->
+	<path id="helloWorld.class.path">
+		<fileset id="helloWorld.class.path.fileset" dir="${basedir}/.." includes="**/dist/*.jar" />
+		<path refid="supp.class.path" />
+	</path>
+
+
+	<target name="clean.helloWorld" >
+		<echo>cleaning helloWorld</echo>
+		
+		<delete dir="${helloWorld.dir}/build/generated" />		
+		<delete dir="${helloWorld.dir}/build/bin" />
+		<delete dir="${helloWorld.dir}/build/lib" />
+		<delete dir="${helloWorld.dir}/build/ear" />
+		<delete dir="${helloWorld.dir}/bin" />
+		<delete dir="${helloWorld.dir}/dist" />		
+	</target>
+
+
+	<target name="init.helloWorld" >
+		<mkdir dir="${helloWorld.dir}/build/generated" />		
+		<mkdir dir="${helloWorld.dir}/build/lib" />		
+		<mkdir dir="${helloWorld.dir}/build/bin/generated" />
+		<mkdir dir="${helloWorld.dir}/build/bin/dao" />
+		<mkdir dir="${helloWorld.dir}/dist" />		
+	</target>
+
+
+	<target name="generate.client.helloWorld_jaxws"  >
+		<wsimport
+			debug="false"
+			verbose="false"
+			sourcedestdir="${helloWorld.dir}/build/generated"
+			destdir="${helloWorld.dir}/build/bin/generated"
+			wsdl="${helloWorld.dir}/wsdl/HelloWorld.wsdl"
+			wsdlLocation="./wsdl/HelloWorld.wsdl"
+			package="example.helloWorld.jaxws"
+			
+			>
+			<binding dir="${helloWorld.dir}/wsdl" includes="*.xml"/>
+		</wsimport>
+		
+		<copy todir="${helloWorld.dir}/build/bin/generated/example/helloWorld/jaxws/wsdl">
+			<fileset dir="${helloWorld.dir}/wsdl" includes="*" />
+		</copy>
+		
+	</target>
+
+	<target name="intern.client.helloWorld.compile.generated" depends="generate.client.helloWorld_jaxws" >
+		
+                <javac  destdir="${helloWorld.dir}/build/bin/generated"
+                        classpathref="helloWorld.class.path"
+                >
+                        <src path="${helloWorld.dir}/build/generated"  />
+                </javac>
+	</target>
+
+	<target name="intern.client.helloWorld.jar.generated" 
+			depends="intern.client.helloWorld.compile.generated">
+		
+                <jar destfile="${helloWorld.dir}/dist/helloWorld.generated.jar">
+                        <fileset dir="${helloWorld.dir}/build/bin/generated">
+                                <include name="**/*.class"/>
+                                <include name="**/*.wsdl" />
+                                <include name="**/*.xsd" />
+                        </fileset>
+
+                        <manifest>
+                                <attribute name="Built-By" value="Helter Scelter"/>
+                        </manifest>
+
+                </jar>
+	</target>
+
+	<target name="intern.client.helloWorld.compile.src" 
+			depends="intern.client.helloWorld.jar.generated" >
+                <javac  destdir="${helloWorld.dir}/build/bin/dao"
+                        classpathref="helloWorld.class.path"
+                >
+                        <src path="${helloWorld.dir}/src" />
+	            		<exclude name="org/**" />
+                </javac>
+	</target>
+
+	<target name="intern.client.helloWorld.jar.src" 
+			depends="intern.client.helloWorld.compile.src">
+
+                <jar destfile="${helloWorld.dir}/dist/helloWorld.jar">
+                        <fileset dir="${helloWorld.dir}/build/bin/dao">
+                                <include name="**/*.class"/>
+                                <include name="**/*.wsdl" />
+                                <include name="**/*.xsd" />
+                        </fileset>
+                        <manifest>
+                                <attribute name="Built-By" value="${user.name}"/>
+                        </manifest>
+
+                </jar>
+	</target>
+
+
+	<target name="compile.client.helloWorld" depends="intern.client.helloWorld.jar.src" >
+	</target>
+
+	
+	
+	
+	<target name="generate.service.helloWorld_jaxws">
+		
+		<wsdlc  srcWsdl="${helloWorld.dir}/wsdl/HelloWorld.wsdl"
+	        	destJwsDir="${helloWorld.dir}/build/lib"
+	        	destImplDir="${helloWorld.dir}/build/generated"
+	    		type="JAXWS"
+	         />
+		<echo>
+			Implementation Stub for helloWorld.wsdl has been generated. 
+			If you have upated this WSDL you must MANUALLY merge the generated stub and the
+			existing implementation.
+		</echo>
+	</target>
+
+	<target name="build.service.helloWorld" 
+			depends="generate.service.helloWorld_jaxws">
+		<local name="eardir" />
+		<property name="eardir" value="${helloWorld.dir}/build/ear/service.helloWorld_ear" />
+		<delete dir="${eardir}" />
+		
+		<jwsc verbose="false" debug="false"
+	        	srcdir="${helloWorld.dir}/src"
+	        	destdir="${eardir}"  
+	        	classpathRef="helloWorld.class.path"
+	    	>
+			<module name="service.helloWorld.war" explode="true" >
+				<jws 	file="org/example/helloworld/HelloWorld_HelloWorldSOAPImpl.java"  
+    					compiledWsdl="${helloWorld.dir}/build/lib/HelloWorld_wsdl.jar"
+    					type="JAXWS"/>
+				<!-- include the implementation classes in this war -->
+				<fileset dir="${helloWorld.dir}/src" >
+					<include name="**/*.java" />
+					<include name="**/*.xsd" />
+					<include name="**/*.wsdl" />
+					<include name="**/*.xml" />
+				</fileset>
+			</module>
+		</jwsc>
+
+
+
+		<!-- build the ear -->
+		<!-- the exploded format WAR file we built above (module tag under jwsc) needs to be renamed so that we can jar it up into a war file... -->
+		<move file="${eardir}/service.helloWorld.war" tofile="${eardir}/service.helloWorld" />
+		<jar destfile="${eardir}/service.helloWorld.war" basedir="${eardir}/service.helloWorld" >
+			
+			<include name="**/*"/>
+			<manifest>
+				<attribute name="Built-By" value="Helter Scelter"/>
+			</manifest>
+		</jar>
+		<jar destfile="${helloWorld.dir}/dist/service.helloWorld.ear" basedir="${eardir}" > 
+			<exclude name="**/service.helloWorld/**" />
+			<manifest>
+				<attribute name="Built-By" value="Helter Scelter"/>
+			</manifest>
+		</jar>
+	</target>
+	
+	<target name="compile.service.helloWorld" depends="build.service.helloWorld" />
+	
+	<target name="all" depends="clean.helloWorld, init.helloWorld, compile.client.helloWorld, compile.service.helloWorld" />
+	
+</project>
