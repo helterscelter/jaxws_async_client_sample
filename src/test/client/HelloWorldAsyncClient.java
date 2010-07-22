@@ -36,10 +36,11 @@ public class HelloWorldAsyncClient {
 		
 		
 		// test the Sync call
+		/*
 		System.out.println("Calling SYNC api");
 		String resp = hwPort.helloWorld("'Helter Scelter Thinks this is a bug'");
 		System.out.println("Resp: " + resp);
-		
+		*/
 		
 		// now, lets call this async
 		int cnt=10;
@@ -80,11 +81,10 @@ public class HelloWorldAsyncClient {
 			
 		}
 		
-		/*
 		System.out.println("Sleeping for 30 seconds");
 		Thread.sleep(30000);
 		System.out.println("Done sleeping, exiting");
-		*/
+
 		
 	}
 
